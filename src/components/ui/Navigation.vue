@@ -42,7 +42,6 @@ const selectItem = (id: string) => {
 .app-navigation {
   width: 100%;
   background-color: #2d3d4f;
-  border-bottom: 1px solid #2d3d4f;
   padding: 0 100px;
   box-sizing: border-box;
 }
@@ -60,15 +59,15 @@ const selectItem = (id: string) => {
 
 .nav-btn {
   background: transparent;
-  border-radius: 4px; 
   width: 160px; 
   height: 48px; 
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s ease;
+  transition: background-color 0.3s;
   outline: none;
+  border: none;
 }
 
 
@@ -89,12 +88,6 @@ const selectItem = (id: string) => {
 
 .nav-btn:hover .nav-text {
   color: #ffffff; 
-}
-
-
-.nav-btn.is-active {
-  background-color: #19242F !important;
-  border-color: #19242F !important;
 }
 
 .nav-btn.is-active .nav-text {

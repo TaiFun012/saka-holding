@@ -87,6 +87,7 @@ const prev = () => {
   position: relative;
   width: 100%;
   overflow: hidden;
+  left: 25px;
 }
 
 .carousel-track {
